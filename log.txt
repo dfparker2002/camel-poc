@@ -1,0 +1,175 @@
+PS E:\Library\source\simple-rest\camel-rest\complete> mvn spring-boot:run
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building camel-rest-service 0.1.0
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] >>> spring-boot-maven-plugin:1.5.1.RELEASE:run (default-cli) > test-compile @ camel-rest-service >>>
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ camel-rest-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ camel-rest-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ camel-rest-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\Library\source\simple-rest\camel-rest\complete\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ camel-rest-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] <<< spring-boot-maven-plugin:1.5.1.RELEASE:run (default-cli) < test-compile @ camel-rest-service <<<
+[INFO]
+[INFO] --- spring-boot-maven-plugin:1.5.1.RELEASE:run (default-cli) @ camel-rest-service ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.1.RELEASE)
+
+2017-02-08 13:00:55.882  INFO 25936 --- [           main] hello.Application                        : Starting Application on DESKTOP- with PID 25936 (E:\Library\source\simple-rest\camel-rest\complete\target\classes star
+ted by amitm in E:\Library\source\simple-rest\camel-rest\complete)
+2017-02-08 13:00:55.889  INFO 25936 --- [           main] hello.Application                        : No active profile set, falling back to default profiles: default
+2017-02-08 13:00:55.996  INFO 25936 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1550c051: startup date [We
+d Feb 08 13:00:55 GMT 2017]; root of context hierarchy
+2017-02-08 13:00:59.559  INFO 25936 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.
+autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-08 13:00:59.762  INFO 25936 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for
+getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-08 13:00:59.928  INFO 25936 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.
+transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a38df6c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-08 13:01:00.107  INFO 25936 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [class org.apache.camel.spring.boot.CamelAutoConfiguration
+$$EnhancerBySpringCGLIB$$c5b7bcdf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-08 13:01:01.848  INFO 25936 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9002 (http)
+2017-02-08 13:01:01.883  INFO 25936 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-02-08 13:01:01.887  INFO 25936 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-02-08 13:01:02.121  INFO 25936 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-02-08 13:01:02.122  INFO 25936 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6132 ms
+2017-02-08 13:01:02.589  INFO 25936 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'CamelServlet' to [/camel-rest-jpa/*]
+2017-02-08 13:01:02.593  INFO 25936 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-02-08 13:01:02.601  INFO 25936 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-02-08 13:01:02.606  INFO 25936 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-02-08 13:01:02.607  INFO 25936 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-02-08 13:01:02.608  INFO 25936 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-02-08 13:01:04.662  INFO 25936 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-08 13:01:04.720  INFO 25936 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+        name: default
+        ...]
+2017-02-08 13:01:04.901  INFO 25936 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-08 13:01:04.905  INFO 25936 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-02-08 13:01:04.910  INFO 25936 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-02-08 13:01:05.018  INFO 25936 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-08 13:01:05.347  INFO 25936 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2017-02-08 13:01:05.768  INFO 25936 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-02-08 13:01:05.772  INFO 25936 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-02-08 13:01:05.833  INFO 25936 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-02-08 13:01:07.105  INFO 25936 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1550c0
+51: startup date [Wed Feb 08 13:00:55 GMT 2017]; root of context hierarchy
+2017-02-08 13:01:07.413  INFO 25936 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/some/booking/]}" onto public hello.Booking hello.GreetingController.greeting(java.lang.String)
+2017-02-08 13:01:07.425  INFO 25936 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> or
+g.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-08 13:01:07.427  INFO 25936 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.au
+toconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-08 13:01:07.565  INFO 25936 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler
+]
+2017-02-08 13:01:07.566  INFO 25936 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-08 13:01:07.695  INFO 25936 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHan
+dler]
+2017-02-08 13:01:10.162  INFO 25936 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 200 type converters
+2017-02-08 13:01:11.169  INFO 25936 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-08 13:01:11.359  INFO 25936 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML routes from: classpath:camel/*.xml
+2017-02-08 13:01:11.361  INFO 25936 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+2017-02-08 13:01:11.364  INFO 25936 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.18.2 (CamelContext: camel-1) is starting
+2017-02-08 13:01:11.367  INFO 25936 --- [           main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2017-02-08 13:01:11.673  INFO 25936 --- [           main] o.a.c.i.DefaultRuntimeEndpointRegistry   : Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit:
+ 1000)
+2017-02-08 13:01:12.116  INFO 25936 --- [           main] o.a.camel.spring.SpringCamelContext      : StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel
+.apache.org/stream-caching.html
+2017-02-08 13:01:12.393  INFO 25936 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: books-api started and consuming from: servlet:/books/%7Bid%7D?httpMethodRestrict=GET
+2017-02-08 13:01:12.397  INFO 25936 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: doc-api started and consuming from: servlet:/api-doc?httpMethodRestrict=GET&matchOnUriPrefix=true
+2017-02-08 13:01:12.398  INFO 25936 --- [           main] o.a.camel.spring.SpringCamelContext      : Total 2 routes, of which 2 are started.
+2017-02-08 13:01:12.400  INFO 25936 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.18.2 (CamelContext: camel-1) started in 1.034 seconds
+2017-02-08 13:01:12.542  INFO 25936 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9002 (http)
+2017-02-08 13:01:12.561  INFO 25936 --- [           main] hello.Application                        : Started Application in 17.65 seconds (JVM running for 27.595)
+2017-02-08 13:01:27.875  INFO 25936 --- [nio-9002-exec-1] o.a.c.c.s.CamelHttpTransportServlet      : Initialized CamelHttpTransportServlet[name=CamelServlet, contextPath=]
+2017-02-08 13:01:27.964  INFO 25936 --- [nio-9002-exec-1] books-api                                : 123
+2017-02-08 13:01:28.541  INFO 25936 --- [nio-9002-exec-1] o.a.camel.component.http4.HttpComponent  : Created ClientConnectionManager org.apache.http.impl.conn.PoolingHttpClientConnectionManager@d23d648
+2017-02-08 13:01:28.806 ERROR 25936 --- [nio-9002-exec-1] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-DESKTOP--11640-1486558868380-0-3 on ExchangeId: ID-DESKTOP--11640-1486558868
+380-0-2). Exhausted after delivery attempt: 1 caught: java.lang.IllegalArgumentException: Invalid uri: /camel-rest-jpa/books/123/books/123?name=123. If you are forwarding/bridging http endpoints, then enable the bridgeEndpoint
+ option on the endpoint: http4://localhost:8080/some/booking/
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[books-api         ] [books-api         ] [servlet:/books/%7Bid%7D?httpMethodRestrict=GET                                ] [       848]
+[books-api         ] [restBinding1      ] [                                                                              ] [        12]
+[books-api         ] [log1              ] [log                                                                           ] [         2]
+[books-api         ] [setHeader1        ] [setHeader[CamelHttpQuery]                                                     ] [         3]
+[books-api         ] [enrich1           ] [enrich[constant{http4://localhost:8080/some/booking/}]                        ] [       820]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+java.lang.IllegalArgumentException: Invalid uri: /camel-rest-jpa/books/123/books/123?name=123. If you are forwarding/bridging http endpoints, then enable the bridgeEndpoint option on the endpoint: http4://localhost:8080/some/b
+ooking/
+        at org.apache.camel.component.http4.HttpProducer.createMethod(HttpProducer.java:443) ~[camel-http4-2.18.2.jar:2.18.2]
+        at org.apache.camel.component.http4.HttpProducer.process(HttpProducer.java:111) ~[camel-http4-2.18.2.jar:2.18.2]
+        at org.apache.camel.util.AsyncProcessorConverterHelper$ProcessorToAsyncProcessorBridge.process(AsyncProcessorConverterHelper.java:61) ~[camel-core-2.18.2.jar:2.18.2]
+        at org.apache.camel.processor.Enricher.process(Enricher.java:187) ~[camel-core-2.18.2.jar:2.18.2]
+        at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:77) ~[camel-core-2.18.2.jar:2.18.2]
+        at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:542) ~[camel-core-2.18.2.jar:2.18.2]
+        at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:197) [camel-core-2.18.2.jar:2.18.2]
+        at org.apache.camel.processor.Pipeline.process(Pipeline.java:120) [camel-core-2.18.2.jar:2.18.2]
+        at org.apache.camel.processor.Pipeline.process(Pipeline.java:83) [camel-core-2.18.2.jar:2.18.2]
+        at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:197) [camel-core-2.18.2.jar:2.18.2]
+        at org.apache.camel.processor.DelegateAsyncProcessor.process(DelegateAsyncProcessor.java:97) [camel-core-2.18.2.jar:2.18.2]
+        at org.apache.camel.http.common.CamelServlet.doService(CamelServlet.java:195) [camel-http-common-2.18.2.jar:2.18.2]
+        at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:74) [camel-http-common-2.18.2.jar:2.18.2]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [javax.servlet-api-3.1.0.jar:3.1.0]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.11.jar:8.5.11]
+        at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+
+2017-02-08 13:02:02.094  INFO 25936 --- [       Thread-4] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1550c051: startup date [Wed F
+eb 08 13:00:55 GMT 2017]; root of context hierarchy
