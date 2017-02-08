@@ -4,7 +4,7 @@
     from("file:data/inbox?noop=true")
                         .log("${body}")
                         .setHeader(Exchange.HTTP_QUERY,simple("name=${body}"))
-                        .enrich("http4://localhost:8080/abe/booking/")
+                        .enrich("http4://localhost:8080/some/booking/")
                         .convertBodyTo(String.class)
                         .log("${body}")
                 .to("file:data/outbox");
